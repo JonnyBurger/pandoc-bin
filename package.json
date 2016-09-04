@@ -1,5 +1,5 @@
 {
-  "name": "pandoc-bin",
+  "name": "@jonny/pandoc-bin",
   "version": "1.0.0",
   "description": "Super easy pandoc conversion",
   "license": "MIT",
