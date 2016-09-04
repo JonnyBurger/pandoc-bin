@@ -1,7 +1,7 @@
 {
   "name": "pandoc-bin",
-  "version": "0.0.0",
-  "description": "Pandoc for node with binary included",
+  "version": "1.0.0",
+  "description": "Super easy pandoc conversion",
   "license": "MIT",
   "repository": "JonnyBurger/pandoc-bin",
   "author": {

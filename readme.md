@@ -21,6 +21,8 @@ await pandoc(['--from=html', '--to=latex'], {input: 'e = mc<sup>2</sup>'})
 //=> 'e = mc\\textsuperscript{2}'
 ```
 
+# Warning
+The binary included in this module is >80MB. You may experience slower `npm install`'s.
 
 ## API
 
