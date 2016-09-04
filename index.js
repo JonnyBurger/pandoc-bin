@@ -9,7 +9,7 @@ const getBinaryName = () => {
 		return 'pandoc-linux';
 	}
 	throw new Error('Module is only supported on macOS and Linux');
-}
+};
 
 module.exports = (args, options) => {
 	return new Promise((resolve, reject) => {
