@@ -1,0 +1,34 @@
+{
+  "name": "pandoc-bin",
+  "version": "0.0.0",
+  "description": "Pandoc for node with binary included",
+  "license": "MIT",
+  "repository": "JonnyBurger/pandoc-bin",
+  "author": {
+    "name": "Jonny Burger",
+    "email": "jonathanburger11@gmail.com",
+    "url": "jonny.io"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "execa": "^0.4.0"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
