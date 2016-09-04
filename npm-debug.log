@@ -1,5 +1,8 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--access=public' ]
 2 info using npm@3.10.3
 3 info using node@v6.3.0
 4 verbose publish [ '.' ]
@@ -13,21 +16,21 @@
 7 silly cache add   rawSpec: '.',
 7 silly cache add   spec: '/Users/jonnyburger/Desktop/pandoc-bin',
 7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory /Users/jonnyburger/.npm/pandoc-bin/1.0.0/package.tgz not in flight; packing
+8 verbose addLocalDirectory /Users/jonnyburger/.npm/@jonny/pandoc-bin/1.0.0/package.tgz not in flight; packing
 9 verbose correctMkdir /Users/jonnyburger/.npm correctMkdir not in flight; initializing
-10 info lifecycle pandoc-bin@1.0.0~prepublish: pandoc-bin@1.0.0
-11 silly lifecycle pandoc-bin@1.0.0~prepublish: no script for prepublish, continuing
-12 verbose tar pack [ '/Users/jonnyburger/.npm/pandoc-bin/1.0.0/package.tgz',
+10 info lifecycle @jonny/pandoc-bin@1.0.0~prepublish: @jonny/pandoc-bin@1.0.0
+11 silly lifecycle @jonny/pandoc-bin@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/jonnyburger/.npm/@jonny/pandoc-bin/1.0.0/package.tgz',
 12 verbose tar pack   '/Users/jonnyburger/Desktop/pandoc-bin' ]
-13 verbose tarball /Users/jonnyburger/.npm/pandoc-bin/1.0.0/package.tgz
+13 verbose tarball /Users/jonnyburger/.npm/@jonny/pandoc-bin/1.0.0/package.tgz
 14 verbose folder /Users/jonnyburger/Desktop/pandoc-bin
-15 verbose addLocalTarball adding from inside cache /Users/jonnyburger/.npm/pandoc-bin/1.0.0/package.tgz
+15 verbose addLocalTarball adding from inside cache /Users/jonnyburger/.npm/@jonny/pandoc-bin/1.0.0/package.tgz
 16 verbose correctMkdir /Users/jonnyburger/.npm correctMkdir not in flight; initializing
-17 silly cache afterAdd pandoc-bin@1.0.0
-18 verbose afterAdd /Users/jonnyburger/.npm/pandoc-bin/1.0.0/package/package.json not in flight; writing
+17 silly cache afterAdd @jonny/pandoc-bin@1.0.0
+18 verbose afterAdd /Users/jonnyburger/.npm/@jonny/pandoc-bin/1.0.0/package/package.json not in flight; writing
 19 verbose correctMkdir /Users/jonnyburger/.npm correctMkdir not in flight; initializing
-20 verbose afterAdd /Users/jonnyburger/.npm/pandoc-bin/1.0.0/package/package.json written
-21 silly publish { name: 'pandoc-bin',
+20 verbose afterAdd /Users/jonnyburger/.npm/@jonny/pandoc-bin/1.0.0/package/package.json written
+21 silly publish { name: '@jonny/pandoc-bin',
 21 silly publish   version: '1.0.0',
 21 silly publish   description: 'Super easy pandoc conversion',
 21 silly publish   license: 'MIT',
@@ -47,68 +50,69 @@
 21 silly publish   xo: { esnext: true },
 21 silly publish   readme: '# pandoc-bin [![Build Status](https://travis-ci.org/JonnyBurger/pandoc-bin.svg?branch=master)](https://travis-ci.org/JonnyBurger/pandoc-bin)\n\n> Super easy format conversions in node using pandoc. No additional installations needed. macOS and Linux supported.\n\n## Install\n\n```\n$ npm install --save pandoc-bin\n```\n\n\n## Usage\n\n```js\nconst pandoc = require(\'pandoc-bin\');\n\nawait pandoc({input: \'*yo*\'});\n//=> \'<p><em>yo</em></p>\'\n\nawait pandoc([\'--from=html\', \'--to=latex\'], {input: \'e = mc<sup>2</sup>\'})\n//=> \'e = mc\\\\textsuperscript{2}\'\n```\n\n# Warning\nThe binary included in this module is >80MB. You may experience slower `npm install`\'s.\n\n## API\n\n### pandoc(input, [arguments], [options])\n\nThe API is the same as [execa](https://github.com/sindresorhus/execa). Go to the project to see how to use ut.\n\n## License\n\nMIT © [Jonny Burger](http://jonny.io)\n',
 21 silly publish   readmeFilename: 'readme.md',
-21 silly publish   gitHead: 'b4c76d390247ed676612c09f32101451a8c5147a',
+21 silly publish   gitHead: '862ce5650ba1f2a757b3d604fcad743f9412ebcd',
 21 silly publish   bugs: { url: 'https://github.com/jonnyburger/pandoc-bin/issues' },
 21 silly publish   homepage: 'https://github.com/jonnyburger/pandoc-bin#readme',
-21 silly publish   _id: 'pandoc-bin@1.0.0',
-21 silly publish   _shasum: '20365279ff952420007b0662d61692479a16951a',
+21 silly publish   _id: '@jonny/pandoc-bin@1.0.0',
+21 silly publish   _shasum: '8ffa995642b959a40de4c9c4ba8caca580182ee9',
 21 silly publish   _from: '.' }
 22 verbose getPublishConfig undefined
-23 silly mapToRegistry name pandoc-bin
-24 silly mapToRegistry using default registry
-25 silly mapToRegistry registry https://registry.npmjs.org/
-26 silly mapToRegistry data Result {
-26 silly mapToRegistry   raw: 'pandoc-bin',
-26 silly mapToRegistry   scope: null,
-26 silly mapToRegistry   escapedName: 'pandoc-bin',
-26 silly mapToRegistry   name: 'pandoc-bin',
-26 silly mapToRegistry   rawSpec: '',
-26 silly mapToRegistry   spec: 'latest',
-26 silly mapToRegistry   type: 'tag' }
-27 silly mapToRegistry uri https://registry.npmjs.org/pandoc-bin
-28 verbose publish registryBase https://registry.npmjs.org/
-29 silly publish uploading /Users/jonnyburger/.npm/pandoc-bin/1.0.0/package.tgz
-30 verbose request uri https://registry.npmjs.org/pandoc-bin
-31 verbose request sending authorization for write operation
-32 info attempt registry request try #1 at 16:41:06
-33 verbose request using bearer token for auth
-34 verbose request id 6c4322c01532d4f6
-35 http request PUT https://registry.npmjs.org/pandoc-bin
-36 http 403 https://registry.npmjs.org/pandoc-bin
-37 verbose headers { 'content-type': 'application/json',
-37 verbose headers   'cache-control': 'max-age=300',
-37 verbose headers   'content-length': '104',
-37 verbose headers   'accept-ranges': 'bytes',
-37 verbose headers   date: 'Sun, 04 Sep 2016 14:41:07 GMT',
-37 verbose headers   via: '1.1 varnish',
-37 verbose headers   connection: 'keep-alive',
-37 verbose headers   'x-served-by': 'cache-bma7022-BMA',
-37 verbose headers   'x-cache': 'MISS',
-37 verbose headers   'x-cache-hits': '0',
-37 verbose headers   'x-timer': 'S1473000066.400374,VS0,VE984',
-37 verbose headers   vary: 'Accept-Encoding' }
-38 verbose request invalidating /Users/jonnyburger/.npm/registry.npmjs.org/pandoc-bin on PUT
-39 error publish Failed PUT 403
-40 verbose stack Error: you do not have permission to publish "pandoc-bin". Are you logged in as the correct user? : pandoc-bin
-40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
-40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
-40 verbose stack     at emitTwo (events.js:106:13)
-40 verbose stack     at Request.emit (events.js:191:7)
-40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
-40 verbose stack     at emitOne (events.js:101:20)
-40 verbose stack     at Request.emit (events.js:188:7)
-40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
-41 verbose statusCode 403
-42 verbose pkgid pandoc-bin
-43 verbose cwd /Users/jonnyburger/Desktop/pandoc-bin
-44 error Darwin 15.4.0
-45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
-46 error node v6.3.0
-47 error npm  v3.10.3
-48 error code E403
-49 error you do not have permission to publish "pandoc-bin". Are you logged in as the correct user? : pandoc-bin
-50 error If you need help, you may report this error at:
-50 error     <https://github.com/npm/npm/issues>
-51 verbose exit [ 1, true ]
+23 silly mapToRegistry name @jonny/pandoc-bin
+24 silly mapToRegistry scope (from package name) @jonny
+25 verbose mapToRegistry no registry URL found in name for scope @jonny
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@jonny/pandoc-bin',
+28 silly mapToRegistry   scope: '@jonny',
+28 silly mapToRegistry   escapedName: '@jonny%2fpandoc-bin',
+28 silly mapToRegistry   name: '@jonny/pandoc-bin',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri https://registry.npmjs.org/@jonny%2fpandoc-bin
+30 verbose publish registryBase https://registry.npmjs.org/
+31 silly publish uploading /Users/jonnyburger/.npm/@jonny/pandoc-bin/1.0.0/package.tgz
+32 verbose request uri https://registry.npmjs.org/@jonny%2fpandoc-bin
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 16:43:03
+35 verbose request using bearer token for auth
+36 verbose request id bf81e037656b576f
+37 http request PUT https://registry.npmjs.org/@jonny%2fpandoc-bin
+38 http 403 https://registry.npmjs.org/@jonny%2fpandoc-bin
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=0',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Sun, 04 Sep 2016 14:43:05 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-bma7026-BMA',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1473000183.511204,VS0,VE1491' }
+40 verbose request invalidating /Users/jonnyburger/.npm/registry.npmjs.org/_40jonny_252fpandoc-bin on PUT
+41 error publish Failed PUT 403
+42 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : @jonny/pandoc-bin
+42 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+42 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+42 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+42 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+42 verbose stack     at emitTwo (events.js:106:13)
+42 verbose stack     at Request.emit (events.js:191:7)
+42 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+42 verbose stack     at emitOne (events.js:101:20)
+42 verbose stack     at Request.emit (events.js:188:7)
+42 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+43 verbose statusCode 403
+44 verbose pkgid @jonny/pandoc-bin
+45 verbose cwd /Users/jonnyburger/Desktop/pandoc-bin
+46 error Darwin 15.4.0
+47 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "--access=public"
+48 error node v6.3.0
+49 error npm  v3.10.3
+50 error code E403
+51 error "You cannot publish over the previously published version 1.0.0." : @jonny/pandoc-bin
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]
